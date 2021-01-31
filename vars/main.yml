@@ -1,0 +1,4 @@
+---
+# vars file for pve_remove_subscription_warning
+
+pve_proxmoxlib_js_file: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js

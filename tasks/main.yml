@@ -1,0 +1,8 @@
+---
+# tasks file for pve_remove_subscription_warning
+- name: Disable warning is the JavaScript file
+  replace:
+    path: "{{ pve_proxmoxlib_js_file }}"
+    regexp: "data.status !== 'Active'"
+    replace: 'false'
+  notify: Restart pveproxy
