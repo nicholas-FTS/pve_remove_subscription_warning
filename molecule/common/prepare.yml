@@ -1,0 +1,11 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: False
+  vars_files:
+    - ../common/vars.yml
+  tasks:
+    - name: Copy test file to container
+      copy:
+        src: ../common/proxmoxlib.js
+        dest: "{{ test_file }}"
