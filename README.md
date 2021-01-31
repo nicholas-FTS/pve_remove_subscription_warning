@@ -3,6 +3,8 @@ Proxmox Remove Subscription Warning
 
 Remove the subscription warning in the Proxmox GUI.
 
+Current version: `v0.1.0`
+
 Requirements
 ------------
 
