@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  vars_files:
+    - ../common/vars.yml
+  roles:
+    - role: pve_remove_subscription_warning
+      pve_proxmoxlib_js_file: "{{ test_file }}"
