@@ -1,0 +1,7 @@
+---
+# handlers file for pve_remove_subscription_warning
+- name: Restart pveproxy
+  systemd:
+    name: pveproxy
+    state: restarted
+  tags: molecule-notest
